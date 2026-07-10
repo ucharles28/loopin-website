@@ -106,7 +106,7 @@ export default function Home() {
             {/* Cards Grid: max-w-[1120px] (3 * 360px cards + 2 * 20px gap) */}
             <div className="flex flex-col md:flex-row gap-5 max-w-[1120px] mx-auto w-full items-stretch justify-center">
               {/* Step 1 */}
-              <div className="bg-[#FFCBE3] rounded-[32px] pt-6 pb-6 px-4 w-full md:w-[360px] h-[252px] flex flex-col justify-start gap-8 shadow-sm relative overflow-hidden group hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(255,203,227,0.8)] transition-all duration-300">
+              <div className="bg-[#FFCBE3] rounded-[32px] pt-6 pb-6 px-4 w-full md:w-[360px] h-[252px] flex flex-col justify-start gap-8 relative overflow-hidden group hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(255,203,227,0.8)] transition-all duration-300">
                 <div className="flex justify-between items-start w-full">
                   {/* Figma-exported Step 1 Icon */}
                   <div className="w-16 h-16 rounded-full overflow-hidden shadow-sm shrink-0 bg-white">
@@ -121,21 +121,21 @@ export default function Home() {
                   <h3 className="font-body font-semibold text-xl text-primary-green leading-none">
                     Start or join a circle
                   </h3>
-                  <p className="font-body text-sm text-text-muted leading-[15px]">
+                  <p className="font-body text-sm text-text-muted leading-[20px]">
                     Invite people you trust. Set the amount, how often you save, and who gets paid when.
                   </p>
                 </div>
               </div>
 
               {/* Step 2 */}
-              <div className="bg-[#8FD3DB] rounded-[32px] pt-6 pb-6 px-4 w-full md:w-[360px] h-[252px] flex flex-col justify-start gap-8 shadow-sm relative overflow-hidden group hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(143,211,219,0.8)] transition-all duration-300">
+              <div className="bg-[#8FD3DB] rounded-[32px] pt-6 pb-6 px-4 w-full md:w-[360px] h-[252px] flex flex-col justify-start gap-8 relative overflow-hidden group hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(143,211,219,0.8)] transition-all duration-300">
                 <div className="flex justify-between items-start w-full">
                   {/* Figma-exported Step 2 Icon */}
                   <div className="w-16 h-16 rounded-full overflow-hidden shadow-sm shrink-0 bg-white">
                     <img src="/images/icon-step-2.png" alt="Contribute automatically icon" className="w-full h-full object-cover" />
                   </div>
                   {/* Step Number Badge (Solid #EDEFEB background with border) */}
-                  <div className="w-8 h-8 rounded-full bg-[#EDEFEB] border border-primary-green/10 flex items-center justify-center font-body font-semibold text-sm text-primary-green shadow-sm leading-none">
+                  <div className="w-8 h-8 rounded-full bg-[#EDEFEB] border border-primary-green/10 flex items-center justify-center font-body font-semibold text-sm text-primary-green leading-none">
                     2
                   </div>
                 </div>
@@ -143,21 +143,21 @@ export default function Home() {
                   <h3 className="font-body font-semibold text-xl text-primary-green leading-none">
                     Contribute automatically
                   </h3>
-                  <p className="font-body text-sm text-text-muted leading-[15px]">
+                  <p className="font-body text-sm text-text-muted leading-[20px]">
                     Loopin collects each month through an FCA-regulated payment partner. No reminders, no reconciling.
                   </p>
                 </div>
               </div>
 
               {/* Step 3 */}
-              <div className="bg-[#FFD95A] rounded-[32px] pt-6 pb-6 px-4 w-full md:w-[360px] h-[252px] flex flex-col justify-start gap-8 shadow-sm relative overflow-hidden group hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(255,217,90,0.8)] transition-all duration-300">
+              <div className="bg-[#FFD95A] rounded-[32px] pt-6 pb-6 px-4 w-full md:w-[360px] h-[252px] flex flex-col justify-start gap-8 relative overflow-hidden group hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(255,217,90,0.8)] transition-all duration-300">
                 <div className="flex justify-between items-start w-full">
                   {/* Figma-exported Step 3 Icon */}
                   <div className="w-16 h-16 rounded-full overflow-hidden shadow-sm shrink-0 bg-white">
                     <img src="/images/icon-step-3.png" alt="Take your turn icon" className="w-full h-full object-cover" />
                   </div>
                   {/* Step Number Badge (Solid #EDEFEB background with border) */}
-                  <div className="w-8 h-8 rounded-full bg-[#EDEFEB] border border-primary-green/10 flex items-center justify-center font-body font-semibold text-sm text-primary-green shadow-sm leading-none">
+                  <div className="w-8 h-8 rounded-full bg-[#EDEFEB] border border-primary-green/10 flex items-center justify-center font-body font-semibold text-sm text-primary-green leading-none">
                     3
                   </div>
                 </div>
@@ -165,7 +165,7 @@ export default function Home() {
                   <h3 className="font-body font-semibold text-xl text-primary-green leading-none">
                     Take your turn
                   </h3>
-                  <p className="font-body text-sm text-text-muted leading-[15px]">
+                  <p className="font-body text-sm text-text-muted leading-[20px]">
                     When it's your month, the full pot lands in your account and every on-time payment builds your credit.
                   </p>
                 </div>
