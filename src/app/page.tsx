@@ -260,7 +260,7 @@ export default function Home() {
           </h2>
           <Marquee />
         </section>
-
+ 
         {/* ================= WAITLIST CTA FORM ================= */}
         <section id="waitlist" 
         style={{ backgroundImage: 'url("/images/form-bg.png")' }}
