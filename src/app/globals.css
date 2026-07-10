@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: #06371E;
+  --color-accent-green: #27D258;
+  --color-bg-page: #F0F3F2;
+  --color-text-main: #0C140F;
+  --color-text-muted: #44504A;
+  
+  --font-display: var(--font-young-serif), Georgia, serif;
+  --font-body: var(--font-inter), sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-page);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+}
+
+/* Custom CSS Animations */
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-rotate-slow {
+  animation: rotateSlow 40s linear infinite;
+}
+
+.animate-marquee {
+  animation: marqueeScroll 25s linear infinite;
+}
+
