@@ -2,6 +2,7 @@ import React from "react";
 import HeroDiagram from "@/components/HeroDiagram";
 import Marquee from "@/components/Marquee";
 import WaitlistForm from "@/components/WaitlistForm";
+import GoRoundBanner from "@/components/GoRoundBanner";
 
 export default function Home() {
   return (
@@ -90,20 +91,7 @@ export default function Home() {
         </section>
 
         {/* ================= GO ROUND BANNER ================= */}
-        <section className="relative w-full h-[429px] overflow-hidden flex items-center justify-center">
-          {/* Background image overlayed with dark green */}
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url('/images/ground-loopin.png')` }}
-          />
-          <div className="absolute inset-0 bg-primary-green/65" />
-
-          <div className="relative z-10 max-w-[1240px] mx-auto px-6 sm:px-12 w-full text-center flex flex-col items-center justify-center">
-            <h2 className="font-display text-5xl sm:text-7xl md:text-[92px] leading-tight text-white tracking-tight max-w-[800px] mx-auto">
-              Go round with Loopin.
-            </h2>
-          </div>
-        </section>
+        <GoRoundBanner />
 
         {/* ================= THREE STEPS SECTION ================= */}
         <section className="w-full py-24 bg-[#EDEFEB]">
