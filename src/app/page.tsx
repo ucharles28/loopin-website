@@ -31,17 +31,10 @@ export default function Home() {
       <main className="flex-1">
         <section className="relative overflow-hidden w-full pt-16 pb-12 flex flex-col items-center text-center">
           {/* Concentric curved mesh background pattern matching figma */}
-          <svg className="absolute inset-0 w-full h-full opacity-[0.06] pointer-events-none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="95%" cy="50%" r="300" stroke="#06371E" strokeWidth="1.5" fill="none" />
-            <circle cx="95%" cy="50%" r="450" stroke="#06371E" strokeWidth="1.5" fill="none" />
-            <circle cx="95%" cy="50%" r="600" stroke="#06371E" strokeWidth="1.5" fill="none" />
-            <circle cx="95%" cy="50%" r="750" stroke="#06371E" strokeWidth="1.5" fill="none" strokeDasharray="5 5" />
-            <circle cx="95%" cy="50%" r="900" stroke="#06371E" strokeWidth="1.5" fill="none" />
-
-            <circle cx="5%" cy="20%" r="200" stroke="#06371E" strokeWidth="1.5" fill="none" />
-            <circle cx="5%" cy="20%" r="350" stroke="#06371E" strokeWidth="1.5" fill="none" />
-            <circle cx="5%" cy="20%" r="500" stroke="#06371E" strokeWidth="1.5" fill="none" strokeDasharray="5 5" />
-          </svg>
+          <div
+            className="absolute top-0 left-1/2 -translate-x-1/2 w-[2184px] h-[971px] pointer-events-none opacity-[0.6] z-0"
+            style={{ backgroundImage: 'url("/images/hero-bg-desktop.svg")', backgroundSize: '100% 100%' }}
+          />
 
           <div className="max-w-[1240px] mx-auto px-6 sm:px-12 flex flex-col items-center z-10">
 
@@ -115,7 +108,7 @@ export default function Home() {
                     <img src="/images/icon-step-1.png" alt="Start or join a circle icon" className="w-full h-full object-cover" />
                   </div>
                   {/* Step Number Badge (Solid #EDEFEB background with border) */}
-                  <div className="w-8 h-8 rounded-full bg-[#EDEFEB] border border-primary-green/10 flex items-center justify-center font-body font-semibold text-sm text-primary-green shadow-sm">
+                  <div className="w-8 h-8 rounded-full bg-[#EDEFEB] border border-primary-green/10 flex items-center justify-center font-body font-semibold text-sm text-primary-green shadow-sm leading-none">
                     1
                   </div>
                 </div>
@@ -137,7 +130,7 @@ export default function Home() {
                     <img src="/images/icon-step-2.png" alt="Contribute automatically icon" className="w-full h-full object-cover" />
                   </div>
                   {/* Step Number Badge (Solid #EDEFEB background with border) */}
-                  <div className="w-8 h-8 rounded-full bg-[#EDEFEB] border border-primary-green/10 flex items-center justify-center font-body font-semibold text-sm text-primary-green shadow-sm">
+                  <div className="w-8 h-8 rounded-full bg-[#EDEFEB] border border-primary-green/10 flex items-center justify-center font-body font-semibold text-sm text-primary-green shadow-sm leading-none">
                     2
                   </div>
                 </div>
@@ -159,7 +152,7 @@ export default function Home() {
                     <img src="/images/icon-step-3.png" alt="Take your turn icon" className="w-full h-full object-cover" />
                   </div>
                   {/* Step Number Badge (Solid #EDEFEB background with border) */}
-                  <div className="w-8 h-8 rounded-full bg-[#EDEFEB] border border-primary-green/10 flex items-center justify-center font-body font-semibold text-sm text-primary-green shadow-sm">
+                  <div className="w-8 h-8 rounded-full bg-[#EDEFEB] border border-primary-green/10 flex items-center justify-center font-body font-semibold text-sm text-primary-green shadow-sm leading-none">
                     3
                   </div>
                 </div>
