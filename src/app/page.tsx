@@ -315,7 +315,7 @@ export default function Home() {
 
           {/* Bottom copyright & names list */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-sm text-text-muted font-body w-full">
-            <p>© 2026 Loopin. Built for community, in the UK.</p>
+            <p>© 2026 Loopin. Built for community.</p>
             <p className="tracking-wider text-text-main/60 font-semibold uppercase">
               pardna · ajo · kameti · susu · hagbad
             </p>
