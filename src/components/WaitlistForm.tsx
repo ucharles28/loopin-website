@@ -1,24 +1,36 @@
 "use client";
 
 import React, { useState } from "react";
+import { joinWaitlist } from "@/app/actions";
 
 export default function WaitlistForm() {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!firstName || !email) return;
 
     setStatus("submitting");
+    setErrorMsg("");
 
-    // Simulate API request
-    setTimeout(() => {
-      setStatus("success");
-      setFirstName("");
-      setEmail("");
-    }, 1200);
+    try {
+      const result = await joinWaitlist({ firstName, email });
+      if (result.success) {
+        setStatus("success");
+        setFirstName("");
+        setEmail("");
+      } else {
+        setStatus("error");
+        setErrorMsg(result.error || "An error occurred. Please try again.");
+      }
+    } catch (err) {
+      console.error("Waitlist submission error:", err);
+      setStatus("error");
+      setErrorMsg("Connection error. Please check your internet and try again.");
+    }
   };
 
   if (status === "success") {
@@ -83,6 +95,13 @@ export default function WaitlistForm() {
           <span>Join the waitlist</span>
         )}
       </button>
+
+      {/* Error Message Display */}
+      {status === "error" && (
+        <p className="text-rose-300 text-sm text-center mt-1 animate-fade-in font-medium">
+          ⚠️ {errorMsg}
+        </p>
+      )}
     </form>
   );
 }
